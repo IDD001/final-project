@@ -89,6 +89,7 @@ if(isset($_GET["cari"]) ) {
                                 <td class="text-center warna-satu border border-secondary">Kelas</td>
                                 <td class="text-center warna-dua border border-secondary">Angkatan</td>
                                 <td class="text-center warna-satu border border-secondary">Semester</td>
+                                <td class="text-center warna-satu border border-secondary">Tanggal Daftar</td>
                                 <td colspan="2" class="warna-dua text-center border border-secondary">Aksi</td>
                                 <td colspan="2" class="warna-satu text-center border border-secondary">Data Nilai</td>
                             </tr>
@@ -102,6 +103,7 @@ if(isset($_GET["cari"]) ) {
                                     <td class="text-center"><?= $mhs['kelas'] ?></td>
                                     <td class="text-center"><?= $mhs['angkatan'] ?></td>
                                     <td class="text-center"><?= $mhs['semester'] ?></td>
+                                    <td class="text-center"><?= $mhs['tgl_daftar'] ?></td>
                                     <?php  ?>
                                     <td><a href="edit.php?U_ID=<?= $mhs['id']  ?>" class="btn btn-success">Edit</a></td>
                                     <td><a href="delete.php?D_ID=<?= $mhs['id'] ?>" class="btn btn-warning" onclick="return confirm('Apakah anda yakin ingin menghapus data tersebut?');" >Delete</a></td>
